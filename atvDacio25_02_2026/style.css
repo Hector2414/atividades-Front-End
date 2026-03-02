@@ -1,3 +1,32 @@
-.body{
+body{
+
+    background-color: darkseagreen;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+
+img{
+    border-radius: 5%;
+}
+a{
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 5%;
+
+}
+/* .portas{
+    background-color: red;
+    height: 10px;
+    width: 180px;
+}
+.aritMet{
+    background-color: blue;
+    height: 50px;
+    width: 180px;
+    border-radius: 15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
