@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grupos da Copa do Mundo</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Grupos da Copa do Mundo</h1>
+
+<button class="botao" onclick="proximoGrupo()">
+Próximo
+</button>
+
+<div class="container" id="grupos">
+
+<div class="card">
+<h2>Grupo A</h2>
+
+<ul>
+<li>Brasil</li>
+<li>Sérvia</li>
+<li>Suíça</li>
+<li>Camarões</li>
+</ul>
+
+<details>
+<summary>Saiba Mais</summary>
+<p>Brasil é favorito e possui tradição em Copas.</p>
+</details>
+
+</div>
+
+
+<div class="card">
+<h2>Grupo B</h2>
+
+<ul>
+<li>Inglaterra</li>
+<li>Estados Unidos</li>
+<li>Irã</li>
+<li>País de Gales</li>
+</ul>
+
+<details>
+<summary>Saiba Mais</summary>
+<p>Grupo equilibrado com seleções tradicionais.</p>
+</details>
+
+</div>
+
+
+<div class="card">
+<h2>Grupo C</h2>
+
+<ul>
+<li>Argentina</li>
+<li>México</li>
+<li>Polônia</li>
+<li>Arábia Saudita</li>
+</ul>
+
+<details>
+<summary>Saiba Mais</summary>
+<p>Argentina aparece como favorita do grupo.</p>
+</details>
+
+</div>
+
+</div>
+
+<div class="controle">
+<button onclick="mostrarImagem()">Mostrar Tabela</button>
+<button onclick="esconderImagem()">Esconder Tabela</button>
+</div>
+<div class="divImg">
+    <img src="img/Tabela_Jogos.png" alt="" id="imagem">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
