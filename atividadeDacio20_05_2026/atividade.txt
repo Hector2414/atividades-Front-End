@@ -1,0 +1,81 @@
+HTML: 
+
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+CSS:
+
+body{
+  heigth: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.box{
+  width: 300px;
+  h1{
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+  }
+}
+
+JS:
+
+import React from "https://esm.sh/react"; 
+import ReactDOM from "https://esm.sh/react-dom";
+import {createRoot} from "https://esm.sh/react-dom//client";
+
+
+function CompText(){
+  return <p>O professor mais gostoso do Brasi!! <br/> <a href="https://media.licdn.com/dms/image/v2/D4E03AQH4HbJbUB9cKw/profile-displayphoto-scale_200_200/B4EZy0qhH1GYAY-/0/1772557574359?e=2147483647&v=beta&t=pMi_cSSLCiTWDTleDlZalpmZkmn_is8iz753H5_EsQI">VEJA AQUI</a></p>;
+  
+  
+}
+
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://react.dev/images/docs/scientists/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
+ function Profile() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+    
+  );
+ };
+const App = () => {
+  return(
+      <div className="box">
+     <h1>Spotted UNICESUMAR</h1>
+      <CompText />
+      <Profile />
+   </div>
+  );
+};
+
+
+
+const rootElement = document.getElementById("root");
+
+const rootPage = createRoot(rootElement);
+
+rootPage.render(<App />);
+
+
